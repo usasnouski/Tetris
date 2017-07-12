@@ -1,3 +1,19 @@
-.canvas > canvas {
+.tetris-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.tetris-game {
+  background: -moz-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #08D6FF), color-stop(100%, #FF00FF)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* ie10+ */
+  background: linear-gradient(0deg, #FF00FF 0%, #08D6FF 69%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08D6FF', endColorstr='#FF00FF',GradientType=0 ); /* ie6-9 */
+}
+
+.title {
+  margin: 40px auto;
 }
