@@ -5,6 +5,7 @@
 }
 
 .tetris-game {
+  height: 100vh;
   background: -moz-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* ff3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #08D6FF), color-stop(100%, #FF00FF)); /* safari4+,chrome */
   background: -webkit-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* safari5.1+,chrome10+ */
@@ -16,4 +17,172 @@
 
 .title {
   margin: 40px auto;
+}
+
+.tetris-container {
+  display: flex;
+}
+
+.tetris-canvas {
+  border: 25px solid rgba(0, 0, 0, 0.56);
+  border-radius: 25px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats {
+  margin: 0 35px;
+}
+
+.score-container, .level-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.score-lvl {
+  display: flex;
+  align-items: center;
+  font-size: -webkit-xxx-large;
+  color: #ff00ff;
+  font-weight: 700;
+  /* text-shadow: -3px 2px 0 white, 0 26px white, 56px 0 white, 0 -3px white; */
+  color: #FD29FC;
+  font-family: 'Press Start 2P', cursive;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+.controls-container {
+  margin: 10px 40px;
+/* display: flex; */
+/* justify-content: space-between; */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.arrow {
+  display: flex;
+}
+
+.arrow-icon {
+  margin-right: 25px;
+}
+
+.arrow-icon > img {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.arrow > div:last-of-type {
+  align-self: center;
+  font-family: sans-serif;
+  font-size: 2.1vw;
+  color: rgba(272, 338, 270, 0.7);
+  border: 3px solid rgba(272, 338, 270, 0.1);
+  background: rgba(272, 338, 270, 0.5);
+  color: black;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+
+.neon-effect {
+  text-align:center;
+  font-size:40px;
+  margin:20px 0 20px 0;
+  color:#ffffff;
+  text-shadow: 0 0 10px #ffffff,
+             0 0 20px  #ffffff,
+             0 0 30px  #ffffff,
+             0 0 40px  #228DFF,
+             0 0 70px  #228DFF,
+             0 0 80px  #228DFF,
+             0 0 100px #228DFF,
+             0 0 150px #228DFF;
+  /*Animation*/
+  -webkit-animation: neonAnimation 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonAnimation 1.5s ease-in-out infinite alternate;
+  animation: neonAnimation 1.5s ease-in-out infinite alternate;
+}
+
+
+/*Webkit prefix*/
+@-webkit-keyframes neonAnimation {
+    from {
+      box-shadow: 0 0 10px #ffffff,
+                 0 0 20px  #ffffff,
+                 0 0 30px  #ffffff,
+                 0 0 40px  #228DFF,
+                 0 0 70px  #228DFF,
+                 0 0 80px  #228DFF,
+                 0 0 100px #228DFF,
+                 0 0 150px #228DFF;
+    }
+    to {
+      box-shadow: 0 0 5px #ffffff,
+                 0 0 10px #ffffff,
+                 0 0 15px #ffffff,
+                 0 0 20px #228DFF,
+                 0 0 35px #228DFF,
+                 0 0 40px #228DFF,
+                 0 0 50px #228DFF,
+                 0 0 75px #228DFF;
+    }
+}
+
+
+/*Moz prefix*/
+@-moz-keyframes neonAnimation {
+    from {
+      box-shadow: 0 0 10px #ffffff,
+                 0 0 20px  #ffffff,
+                 0 0 30px  #ffffff,
+                 0 0 40px  #228DFF,
+                 0 0 70px  #228DFF,
+                 0 0 80px  #228DFF,
+                 0 0 100px #228DFF,
+                 0 0 150px #228DFF;
+    }
+    to {
+      box-shadow: 0 0 5px #ffffff,
+                 0 0 10px #ffffff,
+                 0 0 15px #ffffff,
+                 0 0 20px #228DFF,
+                 0 0 35px #228DFF,
+                 0 0 40px #228DFF,
+                 0 0 50px #228DFF,
+                 0 0 75px #228DFF;
+    }
+}
+
+/*No prefix*/
+@keyframes neonAnimation {
+    from {
+      box-shadow: 0 0 10px #ffffff,
+                 0 0 20px  #ffffff,
+                 0 0 30px  #ffffff,
+                 0 0 40px  #228DFF,
+                 0 0 70px  #228DFF,
+                 0 0 80px  #228DFF,
+                 0 0 100px #228DFF,
+                 0 0 150px #228DFF;
+    }
+    to {
+      box-shadow: 0 0 5px #ffffff,
+            0 0 10px #ffffff,
+            0 0 15px #ffffff,
+            0 0 20px #228DFF,
+            0 0 35px #228DFF,
+            0 0 40px #228DFF,
+            0 0 50px #228DFF,
+            0 0 75px #228DFF;
+    }
 }

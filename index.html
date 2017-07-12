@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <title>Tetris</title>
   </head>
   <body>
@@ -9,11 +10,52 @@
       <div class="title">
         <img src="style/TETRIS.png" alt="tetris_logo">
       </div>
-      <div class="game-on">
-        <canvas id="tetris" width="300" height="600"></canvas>
-      </div>
-      <div class="sidebar">
-        <div id="score">score</div>
+      <div class="tetris-container">
+        <div class="tetris-screen">
+          <canvas id="tetris" class="tetris-canvas neon-effect" width="300" height="600"></canvas>
+        </div>
+        <div class="sidebar">
+          <div class="stats">
+            <div class="score-container">
+              <div class="score-img">
+                <img src="style/score.png" alt="score">
+              </div>
+              <div id="score" class="score-lvl"></div>
+            </div>
+            <div class="level-container">
+              <div class="level-img">
+                <img src="style/level.png" alt="score">
+              </div>
+              <div id="level" class="score-lvl"></div>
+            </div>
+          </div>
+          <div class="controls-container">
+            <div class="arrow up-arrow">
+              <div class="arrow-icon">
+                <img src="style/up-arrow.png" alt="up-arrow">
+              </div>
+              <div>Rotate</div>
+            </div>
+            <div class="arrow left-arrow">
+              <div class="arrow-icon">
+                <img src="style/left-arrow.png" alt="left-arrow">
+              </div>
+              <div>Move left</div>
+            </div>
+            <div class="arrow right-arrow">
+              <div class="arrow-icon">
+                <img src="style/right-arrow.png" alt="right-arrow">
+              </div>
+              <div>Move right</div>
+            </div>
+            <div class="arrow down-arrow">
+              <div class="arrow-icon">
+                <img src="style/down-arrow.png" alt="down-arrow">
+              </div>
+              <div>Move down</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <link rel="stylesheet" type="text/css" href="./style/tetris.css">
