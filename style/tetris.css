@@ -5,6 +5,7 @@
 }
 
 .tetris-game {
+  min-height: 910px;
   height: 100vh;
   background: -moz-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* ff3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #08D6FF), color-stop(100%, #FF00FF)); /* safari4+,chrome */
@@ -21,6 +22,56 @@
 
 .tetris-container {
   display: flex;
+  z-index: 1;
+}
+
+#modal {
+  margin-top: 45px;
+  margin-left: 25px;
+  background: -moz-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #08D6FF), color-stop(100%, #FF00FF)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* ie10+ */
+  background: linear-gradient(0deg, #FF00FF 0%, #08D6FF 69%); /* w3c */
+  /*border: 25px solid rgba(0, 0, 0, 0.56);*/
+  /*border-radius: 25px;*/
+}
+
+.modal-on {
+  position: absolute;
+  min-width: 299.5px;
+  min-height: 600px;
+  max-width: 299.5px;
+  max-height: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.modal-off {
+  position: absolute;
+  display: none;
+  /*z-index: -1;*/
+}
+
+.intro {
+  font-family: 'Orbitron', sans-serif;
+  color: #c460ce;
+  text-align: center;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+
+.intro-2 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.enter-icon {
+  width: 14%;
 }
 
 .tetris-canvas {
@@ -36,13 +87,15 @@
 }
 
 .stats {
+  align-self: center;
+  width: 60%;
   margin: 0 35px;
 }
 
 .score-container, .level-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .score-lvl {
@@ -51,7 +104,6 @@
   font-size: -webkit-xxx-large;
   color: #ff00ff;
   font-weight: 700;
-  /* text-shadow: -3px 2px 0 white, 0 26px white, 56px 0 white, 0 -3px white; */
   color: #FD29FC;
   font-family: 'Press Start 2P', cursive;
   -webkit-text-stroke-width: 3px;
@@ -61,8 +113,6 @@
 .controls-container {
   margin: 0px 98px;
   margin-top: 25px;
-/* display: flex; */
-/* justify-content: space-between; */
   flex-direction: column;
   justify-content: space-between;
 }
@@ -81,13 +131,9 @@
 
 .arrow > div:last-of-type {
   align-self: center;
-  font-family: sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.7vw;
-  color: rgba(272, 338, 270, 0.7);
-  border: 3px solid rgba(272, 338, 270, 0.1);
-  background: rgba(272, 338, 270, 0.5);
   color: black;
-  border-radius: 10px;
   padding: 3px;
 }
 

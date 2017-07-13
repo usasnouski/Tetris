@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <title>Tetris</title>
   </head>
   <body>
@@ -11,7 +12,14 @@
         <img src="style/TETRIS.png" alt="tetris_logo">
       </div>
       <div class="tetris-container">
+
         <div class="tetris-screen">
+          <div id="modal" class="modal-on" >
+            <div><h1 class="intro">Welcome to <br/>TETRIS,<br/> stunna</h1></div>
+            <div class="intro-2">
+              Just press <img class="enter-icon" src="style/enter.png" alt="enter-key">
+              , lean back and enjoy like it's Miami '89</div>
+          </div>
           <canvas id="tetris" class="tetris-canvas neon-effect" width="300" height="600"></canvas>
         </div>
         <div class="sidebar">
@@ -54,9 +62,18 @@
               </div>
               <div>Move down</div>
             </div>
+            <div class="arrow space-bar">
+              <div class="spacebar-icon">
+                <img src="style/space.png" alt="spacebar">
+              </div>
+              <div>Drop</div>
+            </div>
           </div>
         </div>
       </div>
+
+
+
     </div>
     <link rel="stylesheet" type="text/css" href="./style/tetris.css">
     <script type="text/javascript" src="./lib/bundle.js"></script>
