@@ -5,7 +5,7 @@
 }
 
 .tetris-game {
-  min-height: 910px;
+  min-height: 1000px;
   height: 100vh;
   background: -moz-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* ff3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #08D6FF), color-stop(100%, #FF00FF)); /* safari4+,chrome */
@@ -141,6 +141,66 @@ body {
   margin: 0 auto;
 }
 
+
+.icon-link {
+  padding: 1px;
+  margin: 10px 5px;
+  margin-right: 11px;
+  background-color: white;
+  width: 37px;
+  height: 48px;
+  border-radius: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.linkedin-link {
+  background: black;
+  border-radius: 27px;
+  width: 52px;
+  height: 52px;
+}
+
+.fa {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  // top: 7px;
+  // left: 11px;
+  // font-size: 1.7em;
+  color: black;
+}
+
+.fa-github {
+  position: absolute;
+  top: -8px;
+  left: -7px;
+  font-size: 4em;
+  color: black;
+}
+
+.fa-linkedin {
+  top: 4px;
+  left: 10px;
+  font-size: 2.5em;
+  color: white;
+}
+
+.git-link:hover {
+  background: transparent;
+}
+
+.fa-github:hover {
+  color: white;
+}
+
+.linkedin-link:hover {
+  background: #0077B5;
+
+  // .fa-linkedin {
+  //   color: #fff;
+  // }
+}
 
 .neon-effect {
   text-align:center;
