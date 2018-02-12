@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .tetris-game {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,7 @@
 }
 
 .tetris-game {
-  min-height: 1000px;
+  min-height: 950px;
   height: 100vh;
   background: -moz-linear-gradient(90deg, #FF00FF 0%, #08D6FF 69%); /* ff3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #08D6FF), color-stop(100%, #FF00FF)); /* safari4+,chrome */
@@ -17,7 +21,7 @@
 }
 
 .title {
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 .tetris-container {
@@ -130,11 +134,22 @@
 }
 
 .arrow > div:last-of-type {
-  align-self: center;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.7vw;
+  font-size: 2em;
   color: black;
   padding: 3px;
+}
+
+.spacebar-icon {
+  width: 77px;
+  height: 33px;
+  background-color: #ffffff66;
+  border: 3px solid black;
+  font-family: Orbitron;
+  font-size: 1em;
+  text-align: center;
+  line-height: 33px;
+  margin-right: 25px;
 }
 
 body {
@@ -200,6 +215,20 @@ body {
   // .fa-linkedin {
   //   color: #fff;
   // }
+}
+
+footer {
+  font-family: Orbitron;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: #228DFF;
 }
 
 .neon-effect {
