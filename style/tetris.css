@@ -87,13 +87,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 480px;
+  width: 400px;
 }
 
 .stats {
   align-self: center;
-  width: 60%;
-  margin: 0 35px;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .score-container, .level-container {
@@ -115,10 +116,12 @@ a {
 }
 
 .controls-container {
-  margin: 0px 98px;
-  margin-top: 25px;
+  height: 300px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .arrow {
